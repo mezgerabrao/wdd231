@@ -6,7 +6,7 @@
   --white-color: #ffffff;
   --dark-color: #111827;
   --border-color: #d1d5db;
-  --completed-color: #dbeafe;
+  --completed-color: #bfdbfe;
   --not-completed-color: #e5e7eb;
 }
 
@@ -15,8 +15,8 @@
 }
 
 body {
-  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
   color: var(--dark-color);
   background-color: var(--white-color);
 }
@@ -41,10 +41,10 @@ header img {
 
 #menu {
   margin-left: auto;
-  font-size: 2rem;
-  background: none;
-  border: 1px solid var(--border-color);
   padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border-color);
+  background: none;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -60,15 +60,23 @@ nav.open {
 nav a {
   display: block;
   padding: 1rem;
-  color: var(--white-color);
-  text-decoration: none;
-  font-weight: 700;
   border-top: 1px solid var(--secondary-color);
+  color: var(--white-color);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav a:hover,
 nav a.active {
   background-color: var(--accent-color);
+}
+
+nav a:focus-visible,
+button:focus-visible,
+.social a:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
 }
 
 main {
@@ -84,22 +92,22 @@ h1 {
 
 section {
   margin-bottom: 1rem;
-  background-color: var(--light-color);
   border: 1px solid var(--border-color);
+  background-color: var(--light-color);
 }
 
 section h2 {
   margin: 0;
   padding: 0.5rem;
-  text-align: center;
-  color: var(--white-color);
   background-color: var(--primary-color);
+  color: var(--white-color);
   font-size: 1.1rem;
+  text-align: center;
 }
 
 section p {
-  padding: 1rem;
   margin: 0;
+  padding: 1rem;
   line-height: 1.5;
 }
 
@@ -132,6 +140,7 @@ section p {
   border: 1px solid var(--dark-color);
   border-radius: 0.4rem;
   background-color: var(--white-color);
+  color: var(--dark-color);
   font-weight: 700;
   cursor: pointer;
 }
@@ -153,19 +162,26 @@ section p {
   border: 1px solid var(--border-color);
   border-radius: 0.25rem;
   background-color: var(--not-completed-color);
-  font-weight: 700;
+}
+
+.course-card h3 {
+  margin: 0;
+}
+
+.course-card p {
+  padding: 0.25rem;
 }
 
 .course-card.completed {
-  background-color: var(--completed-color);
   border-color: var(--accent-color);
+  background-color: var(--completed-color);
 }
 
 footer {
   padding: 1rem;
-  text-align: center;
-  background-color: var(--light-color);
   border-top: 1px solid var(--border-color);
+  background-color: var(--light-color);
+  text-align: center;
 }
 
 .social {
@@ -176,6 +192,7 @@ footer {
 }
 
 .social img {
+  display: block;
   width: 40px;
   height: 40px;
 }

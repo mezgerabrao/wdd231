@@ -4,11 +4,14 @@ const navMenu = document.querySelector("#nav-menu");
 menuButton.addEventListener("click", () => {
   navMenu.classList.toggle("open");
 
-  if (navMenu.classList.contains("open")) {
-    menuButton.textContent = "✕";
+  const isOpen = navMenu.classList.contains("open");
+
+  menuButton.textContent = isOpen ? "✕" : "☰";
+  menuButton.setAttribute("aria-expanded", isOpen);
+
+  if (isOpen) {
     menuButton.setAttribute("aria-label", "Close navigation menu");
   } else {
-    menuButton.textContent = "☰";
     menuButton.setAttribute("aria-label", "Open navigation menu");
   }
 });

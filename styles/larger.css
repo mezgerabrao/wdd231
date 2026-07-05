@@ -10,8 +10,8 @@
 
   nav a {
     flex: 1;
-    text-align: center;
     border-top: none;
+    text-align: center;
   }
 
   main {
