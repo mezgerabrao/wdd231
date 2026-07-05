@@ -1,0 +1,185 @@
+:root {
+  --primary-color: #1f2937;
+  --secondary-color: #374151;
+  --accent-color: #2563eb;
+  --light-color: #f3f4f6;
+  --white-color: #ffffff;
+  --dark-color: #111827;
+  --border-color: #d1d5db;
+  --completed-color: #dbeafe;
+  --not-completed-color: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--white-color);
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+}
+
+#menu {
+  margin-left: auto;
+  font-size: 2rem;
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  background-color: var(--primary-color);
+}
+
+nav.open {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 700;
+  border-top: 1px solid var(--secondary-color);
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent-color);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+section {
+  margin-bottom: 1rem;
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+}
+
+section h2 {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+section p {
+  padding: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+.courses {
+  text-align: center;
+}
+
+.course-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.course-buttons button {
+  padding: 0.7rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 0.4rem;
+  background-color: var(--white-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.course-buttons button:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+#course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+}
+
+.course-card {
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  background-color: var(--not-completed-color);
+  font-weight: 700;
+}
+
+.course-card.completed {
+  background-color: var(--completed-color);
+  border-color: var(--accent-color);
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--light-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
