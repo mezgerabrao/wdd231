@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #4f4f9b;
+  --card-background: #d6d6e8;
+  --page-background: #f5f5f5;
+  --text-color: #1f1f1f;
+  --border-color: #4f4f9b;
+  --white: #ffffff;
+  --shadow-color: rgb(0 0 0 / 25%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--page-background);
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--white);
+}
+
+h1 {
+  margin: 0;
+  color: var(--primary-color);
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.4rem;
+  padding: 1rem;
+  background-color: #e5e5e5;
+  box-shadow: 0 0 20px var(--shadow-color);
+}
+
+#cards section {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background);
+  text-align: center;
+}
+
+#cards h2 {
+  margin: 0 0 0.75rem;
+  color: var(--primary-color);
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 1.5rem;
+}
+
+#cards p {
+  margin: 0.35rem 0;
+  line-height: 1.4;
+}
+
+#cards img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 1rem auto 0;
+  box-shadow: 0 0 15px var(--shadow-color);
+}
+
+footer {
+  padding: 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+}
+
+@media screen and (min-width: 40rem) {
+  #cards {
+    padding: 1.25rem;
+  }
+
+  #cards section {
+    padding: 1.25rem;
+  }
+}
