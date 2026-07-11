@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "BahiaPay",
+      "address": "Avenida Tancredo Neves, 620, Salvador, BA",
+      "phone": "+55 71 3010-1001",
+      "website": "https://example.com/bahiapay",
+      "image": "bahia-pay.webp",
+      "membershipLevel": 3,
+      "category": "Digital Payments",
+      "description": "Payment infrastructure and digital collection tools designed for small and medium-sized businesses."
+    },
+    {
+      "name": "Todos Bank",
+      "address": "Rua das Rosas, 155, Salvador, BA",
+      "phone": "+55 71 3010-1002",
+      "website": "https://example.com/todosbank",
+      "image": "todos-bank.webp",
+      "membershipLevel": 3,
+      "category": "Financial Inclusion",
+      "description": "Accessible digital financial services focused on entrepreneurs and underserved communities."
+    },
+    {
+      "name": "Conecta AI",
+      "address": "Avenida Paralela, 900, Salvador, BA",
+      "phone": "+55 71 3010-1003",
+      "website": "https://example.com/conecta-ai",
+      "image": "conecta-ai.webp",
+      "membershipLevel": 2,
+      "category": "Artificial Intelligence",
+      "description": "Artificial intelligence and automation solutions for customer service and business operations."
+    },
+    {
+      "name": "Oceano Data",
+      "address": "Rua da Paciência, 84, Salvador, BA",
+      "phone": "+55 71 3010-1004",
+      "website": "https://example.com/oceano-data",
+      "image": "oceano-data.webp",
+      "membershipLevel": 2,
+      "category": "Data Analytics",
+      "description": "Analytics platforms that transform business data into practical insights and performance indicators."
+    },
+    {
+      "name": "Elevante Tech",
+      "address": "Alameda Salvador, 1057, Salvador, BA",
+      "phone": "+55 71 3010-1005",
+      "website": "https://example.com/elevante-tech",
+      "image": "elevante-tech.webp",
+      "membershipLevel": 1,
+      "category": "Business Technology",
+      "description": "Cloud-based tools that help local businesses organize sales, operations, and customer relationships."
+    },
+    {
+      "name": "Farol Cyber",
+      "address": "Avenida Sete de Setembro, 2100, Salvador, BA",
+      "phone": "+55 71 3010-1006",
+      "website": "https://example.com/farol-cyber",
+      "image": "farol-cyber.webp",
+      "membershipLevel": 2,
+      "category": "Cybersecurity",
+      "description": "Cybersecurity monitoring, risk assessment, and data protection services for growing companies."
+    },
+    {
+      "name": "Acarajé Cloud",
+      "address": "Rua Chile, 42, Salvador, BA",
+      "phone": "+55 71 3010-1007",
+      "website": "https://example.com/acaraje-cloud",
+      "image": "acaraje-cloud.webp",
+      "membershipLevel": 1,
+      "category": "Cloud Services",
+      "description": "Cloud hosting and software deployment services created for startups and digital businesses."
+    }
+  ]
+}
