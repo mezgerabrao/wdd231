@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+main {
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+h1 {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+h1,
+h2 {
+  margin-bottom: 1.1rem;
+  text-align: center;
+}
+
+#enrollment {
+  padding: 1rem 1rem 0;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  background-color: #bed;
+  text-align: center;
+}
+
+select {
+  width: 3rem;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #0078d4;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}
+
+table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #bbb;
+}
