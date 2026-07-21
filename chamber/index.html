@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Connect with Salvador's startup, fintech, and technology ecosystem through events, business opportunities, and chamber membership."
+  >
+  <meta name="author" content="Mezger Abrão">
+
+  <meta
+    property="og:title"
+    content="Salvador Startup and Fintech Chamber"
+  >
+  <meta
+    property="og:description"
+    content="Connect with startups, fintechs, technology companies, and business leaders in Salvador, Bahia."
+  >
+  <meta
+    property="og:image"
+    content="https://mezgerabrao.github.io/wdd231/chamber/images/hero-salvador.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://mezgerabrao.github.io/wdd231/chamber/index.html"
+  >
+
+  <title>Home | Salvador Startup and Fintech Chamber</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html">
+        <img
+          src="images/logo.svg"
+          alt="Salvador Startup and Fintech Chamber logo"
+          width="64"
+          height="64"
+        >
+
+        <span class="brand-text">
+          <strong>Salvador</strong>
+          <span>Startup &amp; Fintech Chamber</span>
+        </span>
+      </a>
+
+      <button
+        id="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav id="primary-navigation" aria-label="Primary navigation">
+      <a href="index.html" class="active" aria-current="page">
+        Home
+      </a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main class="home-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img
+        src="images/hero-salvador.webp"
+        alt="Salvador, Bahia innovation and business community"
+        width="1200"
+        height="600"
+      >
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Build, connect, and grow</p>
+
+          <h1 id="hero-title">
+            Connecting Salvador's Innovation Ecosystem
+          </h1>
+
+          <p>
+            Join founders, fintech leaders, technology professionals, and
+            growing businesses creating new opportunities in Salvador.
+          </p>
+
+          <a class="cta-button" href="join.html">
+            Join the Chamber
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-content">
+      <section class="home-introduction">
+        <p class="eyebrow">Salvador, Bahia</p>
+
+        <h2>A Community Built for Innovation</h2>
+
+        <p>
+          The Salvador Startup and Fintech Chamber connects companies,
+          entrepreneurs, investors, and professionals who are helping build
+          the city's technology and financial innovation ecosystem.
+        </p>
+      </section>
+
+      <div class="information-grid">
+        <section class="home-panel events-panel">
+          <h2>Current Events</h2>
+
+          <article class="event-card">
+            <p class="event-date">August 12</p>
+            <h3>Startup Connections Salvador</h3>
+            <p>
+              An evening of networking, business connections, and discussions
+              with local founders and technology leaders.
+            </p>
+            <p class="event-location">
+              Salvador Innovation Hub | 6:30 p.m.
+            </p>
+          </article>
+
+          <article class="event-card">
+            <p class="event-date">August 22</p>
+            <h3>Fintech Growth Forum</h3>
+            <p>
+              A practical conversation about financial inclusion, digital
+              payments, regulation, and growth opportunities in Bahia.
+            </p>
+            <p class="event-location">
+              Avenida Tancredo Neves | 9:00 a.m.
+            </p>
+          </article>
+        </section>
+
+        <section class="home-panel weather-panel">
+          <h2>Weather in Salvador</h2>
+
+          <div
+            id="current-weather"
+            class="current-weather"
+            aria-live="polite"
+          >
+            <p>Loading current weather...</p>
+          </div>
+
+          <div class="forecast-section">
+            <h3>Three-Day Forecast</h3>
+
+            <div
+              id="forecast"
+              class="forecast-grid"
+              aria-live="polite"
+            >
+              <p>Loading forecast...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="spotlights-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured organizations</p>
+            <h2>Member Spotlights</h2>
+          </div>
+
+          <a class="directory-link" href="directory.html">
+            View full directory
+          </a>
+        </div>
+
+        <div
+          id="spotlights"
+          class="spotlights-grid"
+          aria-live="polite"
+        >
+          <p>Loading member spotlights...</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <strong>Salvador Startup &amp; Fintech Chamber</strong>
+        <p>Avenida Paralela, Salvador, Bahia</p>
+        <p>
+          <a href="mailto:contact@salvadorinnovation.example">
+            contact@salvadorinnovation.example
+          </a>
+        </p>
+        <p>
+          <a href="tel:+557130000000">
+            +55 71 3000-0000
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-development">
+        <p>
+          &copy; <span id="current-year"></span>
+          Salvador Startup &amp; Fintech Chamber
+        </p>
+
+        <p>Mezger Abrão | WDD 231</p>
+
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

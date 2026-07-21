@@ -11,6 +11,7 @@
   --border-color: #cbd5e1;
   --white: #ffffff;
   --shadow: 0 4px 14px rgb(15 23 42 / 12%);
+  --strong-shadow: 0 12px 30px rgb(15 23 42 / 20%);
 }
 
 * {
@@ -123,6 +124,8 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+/* General page content */
+
 main {
   width: min(100% - 2rem, 1200px);
   margin: 0 auto;
@@ -153,6 +156,8 @@ h1 {
   color: var(--muted-text);
   line-height: 1.6;
 }
+
+/* Directory controls */
 
 .view-controls {
   display: flex;
@@ -243,7 +248,7 @@ h1 {
 }
 
 .membership-level-2 {
-  color: #3f3f46;
+  color: #27272a;
   background-color: #d4d4d8;
 }
 
@@ -276,12 +281,339 @@ h1 {
   display: none;
 }
 
+/* Home page */
+
+.home-main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem 1rem;
+  background:
+    linear-gradient(
+      to top,
+      rgb(8 47 73 / 92%),
+      rgb(8 47 73 / 35%),
+      rgb(8 47 73 / 15%)
+    );
+}
+
+.hero-content {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.hero-eyebrow {
+  margin: 0 0 0.6rem;
+  color: #fde68a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 800px;
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(2.25rem, 9vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.hero-content > p:not(.hero-eyebrow) {
+  max-width: 680px;
+  margin: 1rem 0 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.85rem 1.25rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 0.4rem;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  border-color: var(--white);
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.home-content {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.home-introduction {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.home-introduction h2,
+.spotlights-section h2 {
+  margin: 0.25rem 0 0.75rem;
+  color: var(--primary-color);
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+}
+
+.home-introduction > p:last-child {
+  color: var(--muted-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.home-panel {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--card-background);
+  box-shadow: var(--shadow);
+}
+
+.home-panel > h2 {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.event-card {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.event-card:last-child {
+  border-bottom: none;
+}
+
+.event-date {
+  margin: 0 0 0.35rem;
+  color: var(--accent-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.event-card h3 {
+  margin: 0 0 0.6rem;
+  color: var(--primary-color);
+}
+
+.event-card p {
+  line-height: 1.55;
+}
+
+.event-location {
+  margin-bottom: 0;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.current-weather {
+  padding: 1.25rem;
+}
+
+.weather-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-summary img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.weather-details p {
+  margin: 0.25rem 0;
+}
+
+.current-temperature {
+  color: var(--primary-color);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.weather-description {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.weather-extra {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.forecast-section {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.forecast-section h3 {
+  margin: 0 0 1rem;
+  color: var(--primary-color);
+  font-size: 1.15rem;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.forecast-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0.85rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background-color: var(--light-background);
+}
+
+.forecast-card h4 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.forecast-card img {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+
+.forecast-date,
+.forecast-temperature,
+.forecast-description {
+  margin: 0.15rem 0;
+}
+
+.forecast-date {
+  color: var(--muted-text);
+  font-size: 0.85rem;
+}
+
+.forecast-temperature {
+  color: var(--primary-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.forecast-description {
+  color: var(--secondary-color);
+  font-size: 0.85rem;
+}
+
+.spotlights-section {
+  margin-top: 3rem;
+}
+
+.section-heading {
+  margin-bottom: 1.25rem;
+}
+
+.directory-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 700;
+}
+
+.spotlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--card-background);
+  box-shadow: var(--shadow);
+}
+
+.spotlight-header {
+  padding: 1.25rem;
+  text-align: center;
+  background-color: var(--light-background);
+}
+
+.spotlight-header img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}
+
+.spotlight-header h3 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.35rem;
+}
+
+.spotlight-category {
+  margin: 0.35rem 0 0;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.spotlight-contact {
+  padding: 1.25rem;
+}
+
+.spotlight-contact p {
+  line-height: 1.5;
+}
+
+/* Error messages */
+
 .error-message {
+  width: 100%;
   padding: 1rem;
   border: 1px solid #b91c1c;
   color: #7f1d1d;
   background-color: #fee2e2;
 }
+
+/* Footer */
 
 footer {
   padding: 2rem 1rem;
