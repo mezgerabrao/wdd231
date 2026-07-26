@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Apply to join the Salvador Startup and Fintech Chamber and connect with Salvador's innovation ecosystem."
+  >
+  <meta name="author" content="Mezger Abrão">
+
+  <meta
+    property="og:title"
+    content="Join the Salvador Startup and Fintech Chamber"
+  >
+  <meta
+    property="og:description"
+    content="Choose a membership level and apply to join Salvador's startup, fintech, and technology business community."
+  >
+  <meta
+    property="og:image"
+    content="https://mezgerabrao.github.io/wdd231/chamber/images/social-preview.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://mezgerabrao.github.io/wdd231/chamber/join.html"
+  >
+
+  <title>Join | Salvador Startup and Fintech Chamber</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html">
+        <img
+          src="images/logo.svg"
+          alt="Salvador Startup and Fintech Chamber logo"
+          width="64"
+          height="64"
+        >
+
+        <span class="brand-text">
+          <strong>Salvador</strong>
+          <span>Startup &amp; Fintech Chamber</span>
+        </span>
+      </a>
+
+      <button
+        id="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </div>
+
+    <nav id="primary-navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+
+      <a
+        href="join.html"
+        class="active"
+        aria-current="page"
+      >
+        Join
+      </a>
+
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-heading">
+      <p class="eyebrow">Become a member</p>
+
+      <h1>Join the Chamber</h1>
+
+      <p>
+        Complete the application form and select the membership level that
+        best supports your organization’s goals.
+      </p>
+    </div>
+
+    <div class="join-layout">
+      <section
+        class="application-section"
+        aria-labelledby="application-title"
+      >
+        <h2 id="application-title">Membership Application</h2>
+
+        <p class="required-message">
+          Fields marked with an asterisk (*) are required.
+        </p>
+
+        <form
+          class="membership-form"
+          method="get"
+          action="thankyou.html"
+        >
+          <label>
+            First Name *
+            <input
+              type="text"
+              name="firstName"
+              title="Enter your first name"
+              autocomplete="given-name"
+              required
+            >
+          </label>
+
+          <label>
+            Last Name *
+            <input
+              type="text"
+              name="lastName"
+              title="Enter your last name"
+              autocomplete="family-name"
+              required
+            >
+          </label>
+
+          <label>
+            Organizational Title
+            <input
+              type="text"
+              name="organizationTitle"
+              title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+              autocomplete="organization-title"
+              pattern="[A-Za-zÀ-ÖØ-öø-ÿ -]{7,}"
+            >
+          </label>
+
+          <label>
+            Email Address *
+            <input
+              type="email"
+              name="email"
+              title="Enter a valid email address"
+              autocomplete="email"
+              placeholder="name@example.com"
+              required
+            >
+          </label>
+
+          <label>
+            Mobile Phone Number *
+            <input
+              type="tel"
+              name="phone"
+              title="Enter your mobile phone number"
+              autocomplete="tel"
+              required
+            >
+          </label>
+
+          <label>
+            Business or Organization Name *
+            <input
+              type="text"
+              name="organization"
+              title="Enter the name of your business or organization"
+              autocomplete="organization"
+              required
+            >
+          </label>
+
+          <label>
+            Membership Level *
+            <select
+              name="membership"
+              title="Select a membership level"
+              required
+            >
+              <option value="" disabled selected>
+                Select a membership level
+              </option>
+
+              <option value="np">
+                NP Membership — No Fee
+              </option>
+
+              <option value="bronze">
+                Bronze Membership
+              </option>
+
+              <option value="silver">
+                Silver Membership
+              </option>
+
+              <option value="gold">
+                Gold Membership
+              </option>
+            </select>
+          </label>
+
+          <label>
+            Business or Organization Description
+            <textarea
+              name="description"
+              title="Describe your business or organization"
+              rows="6"
+            ></textarea>
+          </label>
+
+          <input
+            type="hidden"
+            name="timestamp"
+            id="timestamp"
+          >
+
+          <input
+            class="submit-button"
+            type="submit"
+            value="Submit Membership Application"
+          >
+        </form>
+      </section>
+
+      <section
+        class="membership-options"
+        aria-labelledby="membership-options-title"
+      >
+        <div class="membership-heading">
+          <p class="eyebrow">Compare benefits</p>
+
+          <h2 id="membership-options-title">
+            Membership Levels
+          </h2>
+
+          <p>
+            Select a membership level based on your organization’s needs,
+            visibility goals, and level of participation.
+          </p>
+        </div>
+
+        <article class="membership-card np-card">
+          <p class="membership-card-label">Community access</p>
+
+          <h3>NP Membership</h3>
+
+          <p>
+            Created for nonprofit organizations supporting Salvador’s
+            business and innovation community.
+          </p>
+
+          <p class="membership-price">No Fee</p>
+
+          <button
+            type="button"
+            class="modal-button"
+            data-dialog="np-dialog"
+          >
+            View NP Benefits
+          </button>
+        </article>
+
+        <article class="membership-card bronze-card">
+          <p class="membership-card-label">Essential membership</p>
+
+          <h3>Bronze Membership</h3>
+
+          <p>
+            A practical entry-level option for companies beginning to engage
+            with the chamber community.
+          </p>
+
+          <p class="membership-price">R$ 600 per year</p>
+
+          <button
+            type="button"
+            class="modal-button"
+            data-dialog="bronze-dialog"
+          >
+            View Bronze Benefits
+          </button>
+        </article>
+
+        <article class="membership-card silver-card">
+          <p class="membership-card-label">Growth membership</p>
+
+          <h3>Silver Membership</h3>
+
+          <p>
+            Designed for growing organizations seeking increased visibility,
+            training, and business connections.
+          </p>
+
+          <p class="membership-price">R$ 1,200 per year</p>
+
+          <button
+            type="button"
+            class="modal-button"
+            data-dialog="silver-dialog"
+          >
+            View Silver Benefits
+          </button>
+        </article>
+
+        <article class="membership-card gold-card">
+          <p class="membership-card-label">Premium membership</p>
+
+          <h3>Gold Membership</h3>
+
+          <p>
+            Provides the chamber’s highest level of visibility, promotion,
+            access, and participation.
+          </p>
+
+          <p class="membership-price">R$ 2,400 per year</p>
+
+          <button
+            type="button"
+            class="modal-button"
+            data-dialog="gold-dialog"
+          >
+            View Gold Benefits
+          </button>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <dialog
+    id="np-dialog"
+    class="membership-dialog"
+    aria-labelledby="np-dialog-title"
+  >
+    <div class="dialog-content">
+      <button
+        type="button"
+        class="close-dialog"
+        aria-label="Close NP Membership benefits"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">No-cost membership</p>
+
+      <h2 id="np-dialog-title">NP Membership Benefits</h2>
+
+      <ul>
+        <li>Access to selected chamber networking events</li>
+        <li>Listing in the online business directory</li>
+        <li>Community news and chamber announcements</li>
+        <li>Access to selected nonprofit training sessions</li>
+        <li>Opportunities to connect with local businesses</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog
+    id="bronze-dialog"
+    class="membership-dialog"
+    aria-labelledby="bronze-dialog-title"
+  >
+    <div class="dialog-content">
+      <button
+        type="button"
+        class="close-dialog"
+        aria-label="Close Bronze Membership benefits"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">Essential membership</p>
+
+      <h2 id="bronze-dialog-title">
+        Bronze Membership Benefits
+      </h2>
+
+      <ul>
+        <li>All basic chamber membership benefits</li>
+        <li>Business listing in the online directory</li>
+        <li>Access to networking events and member meetings</li>
+        <li>Discounted registration for selected events</li>
+        <li>Monthly chamber newsletter and business updates</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog
+    id="silver-dialog"
+    class="membership-dialog"
+    aria-labelledby="silver-dialog-title"
+  >
+    <div class="dialog-content">
+      <button
+        type="button"
+        class="close-dialog"
+        aria-label="Close Silver Membership benefits"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">Growth membership</p>
+
+      <h2 id="silver-dialog-title">
+        Silver Membership Benefits
+      </h2>
+
+      <ul>
+        <li>All Bronze Membership benefits</li>
+        <li>Priority registration for chamber events</li>
+        <li>Access to professional workshops and training</li>
+        <li>Additional event and sponsorship discounts</li>
+        <li>Eligibility for member spotlight promotion</li>
+        <li>Opportunities to participate in chamber committees</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog
+    id="gold-dialog"
+    class="membership-dialog"
+    aria-labelledby="gold-dialog-title"
+  >
+    <div class="dialog-content">
+      <button
+        type="button"
+        class="close-dialog"
+        aria-label="Close Gold Membership benefits"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">Premium membership</p>
+
+      <h2 id="gold-dialog-title">
+        Gold Membership Benefits
+      </h2>
+
+      <ul>
+        <li>All Silver Membership benefits</li>
+        <li>Premium placement in the business directory</li>
+        <li>Priority member spotlight placement on the home page</li>
+        <li>Complimentary access to selected premium events</li>
+        <li>Featured promotion through chamber communication channels</li>
+        <li>Priority sponsorship and speaking opportunities</li>
+        <li>Invitations to exclusive leadership meetings</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <strong>Salvador Startup &amp; Fintech Chamber</strong>
+
+        <p>Avenida Paralela, Salvador, Bahia</p>
+
+        <p>
+          <a href="mailto:contact@salvadorinnovation.example">
+            contact@salvadorinnovation.example
+          </a>
+        </p>
+
+        <p>
+          <a href="tel:+557130000000">
+            +55 71 3000-0000
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-development">
+        <p>
+          &copy; <span id="current-year"></span>
+          Salvador Startup &amp; Fintech Chamber
+        </p>
+
+        <p>Mezger Abrão | WDD 231</p>
+
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

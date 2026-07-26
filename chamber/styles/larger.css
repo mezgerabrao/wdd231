@@ -148,3 +148,84 @@
     box-shadow: var(--strong-shadow);
   }
 }
+
+/* Join page */
+
+@media screen and (min-width: 40rem) {
+  .join-layout {
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+    align-items: start;
+  }
+
+  .application-section {
+    padding: 2rem;
+  }
+
+  .membership-options {
+    position: sticky;
+    top: 1rem;
+  }
+
+  .membership-card {
+    padding: 1.5rem;
+  }
+
+  .membership-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .membership-form label {
+    grid-column: 1 / -1;
+  }
+
+  .membership-form label:nth-of-type(1),
+  .membership-form label:nth-of-type(2) {
+    grid-column: span 1;
+  }
+
+  .membership-form .submit-button {
+    grid-column: 1 / -1;
+    width: fit-content;
+    min-width: 260px;
+  }
+
+  .submission-row {
+    grid-template-columns: minmax(170px, 0.35fr) 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .join-layout {
+    grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.6fr);
+    gap: 3rem;
+  }
+
+  .application-section {
+    padding: 2.5rem;
+  }
+
+  .membership-card {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .membership-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--strong-shadow);
+  }
+
+  .membership-dialog {
+    width: min(90%, 620px);
+  }
+
+  .dialog-content {
+    padding: 2.5rem;
+  }
+
+  .thankyou-card {
+    padding: 2.5rem;
+  }
+}
