@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover cultural landmarks, historic sites, museums, and attractions in Salvador, Bahia.">
+  <meta name="author" content="Mezger Abrão">
+  <meta property="og:title" content="Discover Salvador | Salvador Startup and Fintech Chamber">
+  <meta property="og:description" content="Explore eight representative places that showcase Salvador's history, culture, architecture, and coastal identity.">
+  <meta property="og:image" content="https://mezgerabrao.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://mezgerabrao.github.io/wdd231/chamber/discover.html">
+  <title>Discover Salvador | Salvador Startup and Fintech Chamber</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Salvador Startup and Fintech Chamber logo" width="64" height="64">
+        <span class="brand-text">
+          <strong>Salvador</strong>
+          <span>Startup &amp; Fintech Chamber</span>
+        </span>
+      </a>
+      <button id="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav id="primary-navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html" class="active" aria-current="page">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-heading">
+      <p class="eyebrow">Culture, history, and place</p>
+      <h1>Discover Salvador</h1>
+      <p>Explore landmarks and cultural spaces that represent Salvador's history, architecture, creativity, faith, and relationship with the Bay of All Saints.</p>
+    </div>
+
+    <aside id="visit-message" class="visit-message" aria-live="polite" aria-label="Visit information"></aside>
+
+    <section aria-labelledby="places-title">
+      <div class="discover-section-heading">
+        <div>
+          <p class="eyebrow">Eight places to explore</p>
+          <h2 id="places-title">Salvador Highlights</h2>
+        </div>
+        <p>These places offer visitors and prospective chamber members a representative view of Salvador's cultural and urban identity.</p>
+      </div>
+      <div id="places" class="places-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <strong>Salvador Startup &amp; Fintech Chamber</strong>
+        <p>Avenida Paralela, Salvador, Bahia</p>
+        <p><a href="mailto:contact@salvadorinnovation.example">contact@salvadorinnovation.example</a></p>
+        <p><a href="tel:+557130000000">+55 71 3000-0000</a></p>
+      </div>
+      <div class="footer-development">
+        <p>&copy; <span id="current-year"></span> Salvador Startup &amp; Fintech Chamber</p>
+        <p>Mezger Abrão | WDD 231</p>
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

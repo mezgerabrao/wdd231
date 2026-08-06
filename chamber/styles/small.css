@@ -1027,3 +1027,111 @@ footer a:hover {
     transition: none;
   }
 }
+
+/* Discover page */
+
+.visit-message {
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 6px solid var(--accent-color);
+  border-radius: 0.4rem;
+  color: var(--primary-color);
+  background-color: var(--light-background);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.discover-section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.discover-section-heading h2 {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: clamp(1.6rem, 6vw, 2.25rem);
+}
+
+.discover-section-heading > p {
+  max-width: 760px;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.places-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.place-card {
+  display: grid;
+  grid-template-areas:
+    "name"
+    "photo"
+    "description"
+    "location"
+    "action";
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--card-background);
+  box-shadow: var(--shadow);
+}
+
+.place-card h2 {
+  grid-area: name;
+  margin: 0;
+  padding: 1.1rem 1.25rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.place-card figure {
+  grid-area: photo;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--light-background);
+}
+
+.place-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.place-card address {
+  grid-area: location;
+  padding: 0 1.25rem;
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.place-card > p {
+  grid-area: description;
+  margin: 0;
+  padding: 1.25rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.place-card button {
+  grid-area: action;
+  min-height: 44px;
+  margin: 1rem 1.25rem 1.25rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.4rem;
+  color: var(--secondary-color);
+  background-color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.place-card button:hover,
+.place-card button:focus-visible {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}

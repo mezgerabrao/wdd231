@@ -229,3 +229,76 @@
     padding: 2.5rem;
   }
 }
+
+/* Discover page: medium layout, 641px to 1024px */
+
+@media screen and (min-width: 40.0625rem) {
+  .discover-section-heading {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: end;
+  }
+
+  .discover-section-heading > p {
+    margin: 0;
+  }
+
+  .place-card {
+    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-areas:
+      "photo name"
+      "photo description"
+      "photo location"
+      "photo action";
+    align-items: start;
+  }
+
+  .place-card figure {
+    height: 100%;
+  }
+
+  .place-card img {
+    width: 300px;
+    height: 100%;
+    min-height: 260px;
+    transition:
+      transform 0.35s ease,
+      filter 0.35s ease;
+  }
+
+  .place-card:hover img {
+    transform: scale(1.05);
+    filter: contrast(1.08) saturate(1.08);
+  }
+
+  .place-card address {
+    padding-top: 0.25rem;
+  }
+
+  .place-card button {
+    width: fit-content;
+  }
+}
+
+/* Discover page: large layout, 1025px and wider */
+
+@media screen and (min-width: 64.0625rem) {
+  .places-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .place-card {
+    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-areas:
+      "name name"
+      "photo description"
+      "photo location"
+      "photo action";
+  }
+
+  .place-card img {
+    width: 190px;
+    min-height: 100%;
+  }
+}
