@@ -1,0 +1,284 @@
+:root {
+  --primary-color: #102a43;
+  --secondary-color: #2563eb;
+  --light-accent: #eaf2ff;
+  --page-background: #f8fafc;
+  --text-color: #172033;
+  --white: #ffffff;
+  --border-color: #cbd5e1;
+  --muted-text: #475569;
+  --shadow: 0 6px 18px rgb(16 42 67 / 10%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--page-background);
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header {
+  padding: 3rem 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.header-content {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+.eyebrow,
+.card-label {
+  margin: 0 0 0.5rem;
+  color: var(--secondary-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.site-header .eyebrow {
+  color: var(--light-accent);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  max-width: 800px;
+  margin: 0;
+  font-size: clamp(2.25rem, 8vw, 4.5rem);
+}
+
+.header-summary {
+  max-width: 760px;
+  margin: 1rem 0 0;
+  font-size: 1.05rem;
+}
+
+main {
+  width: min(100% - 2rem, 1100px);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+section > h2 {
+  margin: 0 0 1rem;
+  color: var(--primary-color);
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+}
+
+.section-introduction {
+  max-width: 760px;
+  color: var(--muted-text);
+}
+
+.content-card,
+.color-card,
+.wireframe-card {
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.content-card {
+  padding: 1.5rem;
+}
+
+.content-card h3,
+.color-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.content-card p:last-child,
+.color-card p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+li + li {
+  margin-top: 0.55rem;
+}
+
+.scenario-list li {
+  padding-left: 0.3rem;
+  font-weight: 600;
+}
+
+.page-grid,
+.color-grid,
+.wireframe-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.page-grid {
+  grid-template-columns: 1fr;
+}
+
+.color-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+}
+
+.color-swatch {
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.navy {
+  background-color: var(--primary-color);
+}
+
+.blue {
+  background-color: var(--secondary-color);
+}
+
+.light-blue {
+  background-color: var(--light-accent);
+}
+
+.off-white {
+  background-color: var(--page-background);
+}
+
+.dark-text {
+  background-color: var(--text-color);
+}
+
+.color-code {
+  margin: -0.35rem 0 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.typography-sample {
+  border-left: 8px solid var(--secondary-color);
+}
+
+.font-examples {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--light-accent);
+}
+
+.weight-700 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-400 {
+  font-weight: 400;
+}
+
+code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  background-color: var(--light-accent);
+}
+
+.wireframe-grid {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.wireframe-card {
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.wireframe-card img {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background-color: var(--white);
+}
+
+.wireframe-card figcaption {
+  padding-top: 0.8rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+footer {
+  padding: 2rem 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  .site-header {
+    padding: 4rem 2rem;
+  }
+
+  main {
+    padding-top: 3rem;
+  }
+
+  .content-card {
+    padding: 2rem;
+  }
+
+  .page-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .color-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wireframe-grid {
+    grid-template-columns: minmax(260px, 0.45fr) minmax(0, 1fr);
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  .color-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
